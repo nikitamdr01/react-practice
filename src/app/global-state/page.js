@@ -4,6 +4,8 @@ import React, { useContext, useState } from "react";
 import A from "./components/A";
 import { CounterContext } from "@/context/counterContext";
 import { ThemeContext } from "@/context/themeContext";
+import Datafetch from "@/components/forms/datafetch";
+import Async from "@/components/async";
 
 const GlobalState = () => {
   const mode = useContext(ThemeContext);
@@ -24,9 +26,11 @@ const GlobalState = () => {
         Increase
       </button>
 
-      <CounterContext.Provider value={count}>
+      {/* <CounterContext.Provider value={count}>
         <A />
-      </CounterContext.Provider>
+      </CounterContext.Provider> */}
+      <Datafetch/>
+      {/* <Async/> */}
     </div>
   );
 };
