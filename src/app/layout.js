@@ -4,6 +4,7 @@ import { ThemeContext } from "@/context/themeContext";
 import "./globals.css";
 import { useState } from "react";
 
+
 export default function RootLayout({ children }) {
   const [mode, setMode] = useState("light");
   return (
